@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <title>IP Fera</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/app.css">
-</head>
-
-<body>
+@extends('layout')
+@section('content')
     <article>
         <h1>
-            <?= $post->title; ?>
+            {!! $post->title !!}
         </h1>
         <div>
-            <?= $post->body; ?>
+            {!! $post->body !!}
         </div>
     </article>
     <a href="/">Voltar</a>
-</body>
-
-</html>
+@endsection
