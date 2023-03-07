@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
@@ -23,8 +24,14 @@ Route::get('/', function () {
 });
 
 // Find a post by its slug and pass it to a view called "post"
-Route::get('posts/{post}', function ($slug) {
+Route::get('posts/{post:slug}', function (Post $post) { // Post::where('slug', $post)->firstOrFail()
     return view('post', [
-        'post' => Post::find($slug)
+        'post' => $post
     ]);
-})->where('post', '[A-z_\-0-9]+');
+});
+
+Route::get('categories/{category:slug}', function (Category $category){
+    return view('posts', [
+        'posts' => $category->posts
+    ]);
+});
