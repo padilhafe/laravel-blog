@@ -23,8 +23,8 @@ class PostFactory extends Factory
             'category_id' => Category::factory(),
             'title' => fake()->sentence(),
             'slug' => fake()->slug(),
-            'excerpt' => fake()->sentence(),
-            'body' => fake()->paragraph(),
+            'excerpt' => fake()->paragraph(2),
+            'body' => fake()->paragraph(6),
         ];
     }
 }
