@@ -15,8 +15,23 @@
                 </a>
             </div>
 
-            <div class="mt-8 md:mt-0">
-                <a href="/" class="text-xs font-bold uppercase">Home Page</a>
+            <div class="mt-8 md:mt-0 flex items-center">
+                @guest
+                    <a href="/register" class="text-xs font-bold uppercase">Registre-se</a>
+                    <a href="/login" class="text-xs font-bold uppercase ml-3">Login</a>
+                @endguest
+
+                @auth
+                    <span class="text-xs font-bold uppercase">Bem-vindo, {{ auth()->user()->name }} </span>
+
+                    <form   method="POST" 
+                            action="/logout"
+                            class="text-xs font-semibold text-blue-500 ml-6"    
+                        >
+                        @csrf
+                        <button type="submit">Logout</button>
+                    </form>
+                @endauth
 
                 <a href="#" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                     Inscreva-se para atualizações
@@ -51,4 +66,5 @@
             </div>
         </footer>
     </section>
+    <x-flash />
 </body>
