@@ -1,4 +1,4 @@
 <button type="submit"
-    class="bg-blue-500 text-white uppercase font-semibold text-xs py-2 px-10 rounded-2xl hover:bg-blue-600">
+        class="bg-black hover:bg-gray-700 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
     {{ $slot }}
 </button>
