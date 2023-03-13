@@ -25,7 +25,7 @@
         <nav class="md:flex md:justify-between md:items-center">
             <div>
                 <a href="/">
-                    <img src="/images/logo.png" alt="Vitrion Blog" width="165" height="16">
+                    <img src="/images/logo.png" alt="Felipe Padilha Blog">
                 </a>
             </div>
 
@@ -47,7 +47,7 @@
                     </form>
                 @endauth
                 
-                <a href="#newsletter" class="bg-black hover:bg-gray-700 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+                <a href="#newsletter" class="bg-blue-500 hover:bg-blue-700 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                     Inscreva-se para atualizações
                 </a>
             </div>
@@ -95,7 +95,7 @@
                             >
                         </div>
 
-                        <button type="submit" class="transition-colors duration-300 bg-black hover:bg-gray-700 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
+                        <button type="submit" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-700 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
                             Inscreva-se
                         </button>
                     </form>

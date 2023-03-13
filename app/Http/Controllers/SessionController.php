@@ -8,7 +8,11 @@ use Illuminate\Validation\ValidationException;
 
 class SessionController extends Controller
 {
-
+    public function index()
+    {
+        return view('login');
+    }
+    
     public function store()
     {
         $attributes = request()->validate([

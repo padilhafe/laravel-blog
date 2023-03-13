@@ -1,6 +1,6 @@
 <header class="max-w-xl mx-auto mt-20 text-center">
     <h1 class="text-4xl">
-        <strong>Vitrion</strong> - Consultoria em <strong>TI</strong>
+        $route = ip route <span class="text-blue-500">192.168.1.1</span>
     </h1>
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-4">
